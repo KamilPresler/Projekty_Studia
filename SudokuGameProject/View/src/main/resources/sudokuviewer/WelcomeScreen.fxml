@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokuviewer.MenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="69.0" prefHeight="65.0" prefWidth="200.0" text="Sudoku">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button layoutX="167.0" layoutY="200.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="50.0" prefWidth="250.0" text="%confirm">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="difficult" layoutX="360.0" layoutY="322.0" onAction="#selectLevel" prefHeight="30.0" prefWidth="200.0" promptText="%level">
+      </ComboBox>
+      <ComboBox fx:id="changeLanguage" layoutX="40.0" layoutY="322.0" onAction="#selectLanguage" prefHeight="30.0" prefWidth="200.0" promptText="%changeLanguage">
+      </ComboBox>
+      <Label fx:id="authorsLabel" layoutX="280.0" layoutY="270.0" text="Label" />
+      <ComboBox fx:id="changeBoard" layoutX="40.0" layoutY="23.0" onAction="#pressComboBox" prefWidth="150.0" promptText="%changeBoard" />
+   </children>
+</AnchorPane>
